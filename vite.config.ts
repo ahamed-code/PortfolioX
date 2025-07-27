@@ -4,6 +4,7 @@ import path from "path";
 
 export default defineConfig({
   plugins: [react()],
+  root: "client", // keep it relative for Vercel compatibility
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "client", "src"),
@@ -11,9 +12,8 @@ export default defineConfig({
       "@assets": path.resolve(__dirname, "attached_assets"),
     },
   },
-  root: path.resolve(__dirname, "client"),
   build: {
-    outDir: path.resolve(__dirname, "dist"),  // ✅ Required for Vercel to find output
+    outDir: "../dist", // relative to root (`client`) -> output to project root/dist
     emptyOutDir: true,
   },
   server: {
