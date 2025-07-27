@@ -4,7 +4,7 @@ import PageLayout from "../components/PageLayout";
 import ParticlesBackground from "../components/ParticlesBackground";
 import AnimatedGradient from "../components/AnimatedGradient";
 import Typewriter from "typewriter-effect";
-import emailjs from "emailjs-com";
+import emailjs from "@emailjs/browser";
 import aham2 from '../IMAGES/aham (2).png';
 import csAndCr from '../IMAGES/cs and cr.png';
 import codeRelay from '../IMAGES/code relay.png';

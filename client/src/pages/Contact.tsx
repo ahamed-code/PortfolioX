@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import PageLayout from "../components/PageLayout";
 import ParticlesBackground from "../components/ParticlesBackground";
-import emailjs from "emailjs-com";
+import emailjs from "@emailjs/browser";
 import ahamg from '../IMAGES/aham(3).png';
 
 const Contact = () => {
