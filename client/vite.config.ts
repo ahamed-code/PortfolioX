@@ -5,7 +5,7 @@ import path from "path";
 
 export default defineConfig({
   plugins: [react()],
-  root: "client", // Vercel builds from this folder
+  root: "client", // Use "client" as source root
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "client", "src"),
@@ -14,16 +14,8 @@ export default defineConfig({
     },
   },
   build: {
-    outDir: "dist", // 🟢 Build output stays inside `client/dist`
+    outDir: "../dist",   // Write final build into project root's dist
     emptyOutDir: true,
   },
-  server: {
-    host: true,
-    port: 5173,
-    open: true,
-    fs: {
-      strict: true,
-      deny: ["**/.*"],
-    },
-  },
+  base: "./",            // Important for Vercel static routing
 });
