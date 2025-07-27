@@ -1,10 +1,11 @@
+// vite.config.ts
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import path from "path";
 
 export default defineConfig({
-  root: "client", // ⬅️ This is where index.html is
   plugins: [react()],
+  root: "client", // Vercel builds from this folder
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "client", "src"),
@@ -13,7 +14,7 @@ export default defineConfig({
     },
   },
   build: {
-    outDir: "../dist", // ⬅️ Pushes final build to root/dist
+    outDir: "dist", // 🟢 Build output stays inside `client/dist`
     emptyOutDir: true,
   },
   server: {
