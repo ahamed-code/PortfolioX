@@ -2,9 +2,10 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import path from "path";
 
+// ✅ Vite config optimized for Vercel deployment
 export default defineConfig({
+  root: "client", // Vite project root (your frontend lives in /client)
   plugins: [react()],
-  root: "client", // keep it relative for Vercel compatibility
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "client", "src"),
@@ -13,8 +14,8 @@ export default defineConfig({
     },
   },
   build: {
-    outDir: "../dist", // relative to root (`client`) -> output to project root/dist
-    emptyOutDir: true,
+    outDir: "dist", // Output directory relative to root (i.e., client/dist)
+    emptyOutDir: true, // Clean old dist files before build
   },
   server: {
     host: true,
