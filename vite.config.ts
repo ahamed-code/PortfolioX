@@ -3,9 +3,7 @@ import react from "@vitejs/plugin-react";
 import path from "path";
 
 export default defineConfig({
-  plugins: [
-    react(),
-  ],
+  plugins: [react()],
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "client", "src"),
@@ -15,13 +13,13 @@ export default defineConfig({
   },
   root: path.resolve(__dirname, "client"),
   build: {
-    // OutDir will default to '<root>/dist', i.e., client/dist
+    outDir: path.resolve(__dirname, "dist"),  // ✅ Required for Vercel to find output
     emptyOutDir: true,
   },
   server: {
-    host: true,         // Makes dev server accessible via LAN
-    port: 5173,         // Or another port if you like
-    open: true,         // Opens in browser by default
+    host: true,
+    port: 5173,
+    open: true,
     fs: {
       strict: true,
       deny: ["**/.*"],
