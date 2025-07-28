@@ -44,7 +44,7 @@ const projects = [
     image: "🛒",
     tech: ["Python", "Streamlit", "Tensorflow", "Sklearn", "XGBoost"],
     color: "from-purple-500 to-pink-500",
-    liveDemo: "https://your-live-demo-link.com",
+    liveDemo: "https://lbzqdneflan72wdyxcrigt.streamlit.app/",
   },
   {
     id: 2,
@@ -53,7 +53,7 @@ const projects = [
     image: "📊",
     tech: ["React", "Typescript", "Tailwindcss", "Mongodb", "Firebase"],
     color: "from-blue-500 to-cyan-500",
-    liveDemo: "",
+    liveDemo: "https://github.com/ahamed-code/PLACEMATE",
   },
   {
     id: 3,
@@ -62,7 +62,7 @@ const projects = [
     image: "✅",
     tech: ["React", "Firebase", "TypeScript", "Tailwind", "Github"],
     color: "from-purple-500 to-blue-600",
-    liveDemo: "https://your-live-demo-link.com",
+    liveDemo: "https://portfolio-x-theta.vercel.app/",
   },
   {
     id: 4,
@@ -71,7 +71,7 @@ const projects = [
     image: "🤖",
     tech: ["python", "streamlit", "tensorflow", "sklearn", "LSTM"],
     color: "from-orange-500 to-red-500",
-    liveDemo: "https://your-live-demo-link.com",
+    liveDemo: "https://crypvista-vmzaffttwffldcsm9r6wx3.streamlit.app/",
   }
 ];
 
@@ -148,7 +148,7 @@ const profiles = [
   {
     name: "YouTube",
     icon: <FaYoutube size={48} className="text-red-500" />, // We'll add border styling below!
-    description: "Content creation on spreading Islamic advice",
+    description: "Content creation on quran and hadith",
     stats: "50+ videos",
     url: "https://www.youtube.com/@Islamiccontdaham",
     color: "from-blue-500 to-red-500"
@@ -603,7 +603,7 @@ const handleScrollTop = () => {
                 whileInView={{ opacity: 1, scale: 1 }}
                 className="text-center py-20"
               >
-                <div className="text-6xl mb-6">✅</div>
+                <div className="text-6xl mb-6">❤️</div>
                 <h3 className="text-3xl font-bold text-white mb-4">Message Sent!</h3>
                 <p className="text-gray-300">Thank you for reaching out. I'll get back to you soon!</p>
               </motion.div>
