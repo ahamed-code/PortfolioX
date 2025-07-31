@@ -50,7 +50,7 @@ const About = () => {
             >
               <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-2 sm:mb-4">Full-Stack Developer</h2>
               <p className="text-gray-300 text-sm sm:text-base md:text-lg leading-relaxed">
-                I'm a passionate developer with over 2 years of experience. I'm still growing and learning every day, but I've already worked on building simple, functional, and user-friendly applications. I enjoy working with technologies like React, Node.js, and other modern web tools to improve my skills and create useful projects.
+                I'm a passionate FullStackdeveloper as a Fresher. I'm still growing and learning every day, but I've already worked on building simple, functional, and user-friendly applications. I enjoy working with technologies like React, Node.js, and other modern web tools to improve my skills and create useful projects.
               </p>
               <div className="flex flex-wrap justify-center lg:justify-start gap-2 sm:gap-3 mt-4 sm:mt-6">
                 {["Reactjs", "TypeScript", "Node.js", "Python", "Firebase", "Solidity", "Git & Github", "Django"].map((tech) => (
