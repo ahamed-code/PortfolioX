@@ -26,6 +26,7 @@ import { FaGithub, FaLinkedin, FaYoutube } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
 import { FaArrowUp } from "react-icons/fa"; // add this to your imports
 import resume from "../IMAGES/BASHEER AHAMED A  resume..pdf"
+
 const skills = [
   { name: "Reactjs", level: 95, color: "from-blue-500 to-cyan-500" },
   { name: "TypeScript", level: 90, color: "from-blue-600 to-blue-400" },
@@ -473,6 +474,49 @@ const handleScrollTop = () => {
           </div>
         </div>
       </section>
+
+      {/* SKILLS */}
+<section id="skills" className="min-h-screen bg-black-800/50 flex items-center justify-center">
+  <div className="container mx-auto px-4 py-20">
+    <motion.div
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+      className="text-center mb-16"
+    >
+      <h2 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent">
+        My Skills
+      </h2>
+      <p className="text-xl text-gray-300 max-w-2xl mx-auto">
+        Technologies and tools I work with
+      </p>
+    </motion.div>
+    <div className="max-w-4xl mx-auto">
+      {skills.map((skill, index) => (
+        <motion.div
+          key={skill.name}
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8, delay: index * 0.1 }}
+          className="mb-8"
+        >
+          <div className="flex justify-between items-center mb-2">
+            <h3 className="text-xl font-semibold text-white">{skill.name}</h3>
+            <span className="text-gray-300">{skill.level}%</span>
+          </div>
+          <div className="w-full bg-gray-700 rounded-full h-3 overflow-hidden">
+            <motion.div
+              className={`h-full bg-gradient-to-r ${skill.color} rounded-full`}
+              initial={{ width: 0 }}
+              whileInView={{ width: `${skill.level}%` }}
+              transition={{ duration: 1.5, delay: 0.5 + index * 0.1 }}
+            />
+          </div>
+        </motion.div>
+      ))}
+    </div>
+  </div>
+</section>
 
       {/* PROFILES */}
       <section id="profiles" className="min-h-[60vh] bg-black-900/50 flex items-center justify-center">
