@@ -2,8 +2,7 @@
 
 A dynamic and modern developer portfolio built with **React**, **TypeScript**, **TailwindCSS**, **Framer Motion**, and **Three.js**.
 
-Live Site: [https://portfoliox.vercel.app](https://portfoliox.vercel.app)
-
+Live Site: https://portfolio-x-psi.vercel.app/
 ---
 
 ## 🌟 Features
@@ -74,3 +73,4 @@ Feel free to reach out via the contact form on the site or at: [your-email@examp
 
 🪪 License
 This project is licensed under the MIT License.
+
