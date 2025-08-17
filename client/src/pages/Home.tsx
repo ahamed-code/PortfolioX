@@ -25,7 +25,7 @@ import AudioToggle from "../components/AudioToggle";
 import { FaGithub, FaLinkedin, FaYoutube } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
 import { FaArrowUp } from "react-icons/fa"; // add this to your imports
-import resume from "../IMAGES/BASHEER AHAMED A  resume..pdf"
+import resume from "../../dist/Basheer_Ahamed_Resume.pdf"; // Adjust the path as necessary
 
 const skills = [
   { name: "Reactjs", level: 95, color: "from-blue-500 to-cyan-500" },
@@ -54,7 +54,7 @@ const projects = [
     image: "📊",
     tech: ["React", "Typescript", "Tailwindcss", "Mongodb", "Firebase"],
     color: "from-blue-500 to-cyan-500",
-    liveDemo: "https://github.com/ahamed-code/PLACEMATE",
+    Github: "https://github.com/ahamed-code/PLACEMATE",
   },
   {
     id: 3,
@@ -63,7 +63,7 @@ const projects = [
     image: "✅",
     tech: ["React", "Firebase", "TypeScript", "Tailwind", "Github"],
     color: "from-purple-500 to-blue-600",
-    liveDemo: "https://portfolio-x-theta.vercel.app/",
+    liveDemo: "https://vercel.com/ahamed-codes-projects",
   },
   {
     id: 4,

@@ -6,46 +6,44 @@ import ParticlesBackground from "../components/ParticlesBackground";
 const Projects = () => {
   const [selectedProject, setSelectedProject] = useState<number | null>(null);
 
-  const projects = [
-    {
-      id: 1,
-      title: "Q96 - Finance planner",
-      description: "Prototype integrates the financial goals of peoples",
-      image: "🛒",
-      tech: ["Python", "Streamlit", "TensorFlow", "scikit-learn", "XGBoost"],
-      color: "from-purple-500 to-pink-500",
-      liveDemo: "https://your-live-demo-link.com",
-    },
-    {
-      id: 2,
-      title: "PLACEMATE",
-      description: "A friendly mate to help the user to get job with confidence(under development)",
-      image: "📊",
-      tech: ["React", "TypeScript", "Tailwind CSS", "MongoDB", "Firebase"],
-      color: "from-blue-500 to-cyan-500",
-      liveDemo: "under development ",
-       
-    },
-    {
-      id: 3,
-      title: "My Portfolio",
-      description: "A website showcases my skills and projects for respectable HR 😊",
-      image: "✅",
-      tech: ["React", "TypeScript", "Tailwind CSS", "Firebase", "GitHub"],
-      color: "from-green-500 to-teal-500",
-      liveDemo: "https://your-live-demo-link.com",
-    },
-    {
-      id: 4,
-      title: "CRYPVISTA",
-      description: "A prototype that shows the realtime and predicted prices of cryptocurrencies",
-      image: "🤖",
-      tech: ["Python", "Streamlit", "TensorFlow", "scikit-learn", "LSTM"],
-      color: "from-orange-500 to-red-500",
-      liveDemo: "https://your-live-demo-link.com",
-    },
-  ];
-
+const projects = [
+  {
+    id: 1,
+    title: "Q96 - Finance planner",
+    description: "Prototype integrates the financial goals of peoples ",
+    image: "🛒",
+    tech: ["Python", "Streamlit", "Tensorflow", "Sklearn", "XGBoost"],
+    color: "from-purple-500 to-pink-500",
+    liveDemo: "https://lbzqdneflan72wdyxcrigt.streamlit.app/",
+  },
+  {
+    id: 2,
+    title: "PLACEMATE",
+    description: "A friendly mate to help the user to get job with confidence(under development)",
+    image: "📊",
+    tech: ["React", "Typescript", "Tailwindcss", "Mongodb", "Firebase"],
+    color: "from-blue-500 to-cyan-500",
+    Github: "https://github.com/ahamed-code/PLACEMATE",
+  },
+  {
+    id: 3,
+    title: "My Portfolio",
+    description: "A website showcases my skills and projects for respectable HR 😊",
+    image: "✅",
+    tech: ["React", "Firebase", "TypeScript", "Tailwind", "Github"],
+    color: "from-purple-500 to-blue-600",
+    liveDemo: "https://vercel.com/ahamed-codes-projects",
+  },
+  {
+    id: 4,
+    title: "CRYPVISTA",
+    description: "A prototype that shows the realtime and predicted prices of cryptocurrencies",
+    image: "🤖",
+    tech: ["python", "streamlit", "tensorflow", "sklearn", "LSTM"],
+    color: "from-orange-500 to-red-500",
+    liveDemo: "https://crypvista-vmzaffttwffldcsm9r6wx3.streamlit.app/",
+  }
+];
   return (
     <PageLayout>
        <div className="container mx-auto px-4 lg:px-20 relative z-10">
