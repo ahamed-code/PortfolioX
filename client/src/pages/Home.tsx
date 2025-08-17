@@ -25,7 +25,7 @@ import AudioToggle from "../components/AudioToggle";
 import { FaGithub, FaLinkedin, FaYoutube } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
 import { FaArrowUp } from "react-icons/fa"; // add this to your imports
-import resume from "../../dist/Basheer_Ahamed_Resume.pdf"; // Adjust the path as necessary
+import resume from "../../dist/assets/BASHEER AHAMED A  resume.pdf"; // Adjust the path as necessary
 
 const skills = [
   { name: "Reactjs", level: 95, color: "from-blue-500 to-cyan-500" },

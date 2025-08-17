@@ -19,7 +19,7 @@ const projects = [
   {
     id: 2,
     title: "PLACEMATE",
-    description: "A friendly mate to help the user to get job with confidence(under development)",
+    description: "A friendly mate to help the user to get job with confidence (under development)",
     image: "📊",
     tech: ["React", "Typescript", "Tailwindcss", "Mongodb", "Firebase"],
     color: "from-blue-500 to-cyan-500",
