@@ -135,7 +135,7 @@ const profiles = [
     icon: <SiLeetcode size={48} className="text-yellow-400" />,
     description: "Real world problem solving of my journey",
     stats: "Journey has started",
-    url: "https://leetcode.com/progress/",
+    url: "https://leetcode.com/u/hitmanbasheer/",
     color: "from-orange-400 to-pink-500"
   },
   {
