@@ -17,7 +17,7 @@ const profiles = [
     name: "LeetCode",
     icon: <SiLeetcode size={48} className="text-yellow-400" />,
     description: "Real world problem solving of my journey",
-    stats: "Journey has started",
+    stats: "50+ Problems Solved",
     url: "https://leetcode.com/u/hitmanbasheer/",
     color: "from-orange-400 to-pink-500"
   },
@@ -25,7 +25,7 @@ const profiles = [
     name: "LinkedIn",
     icon: <FaLinkedin size={48} className="text-white" />,
     description: "Network makes a worthy Venture ",
-    stats: "200+ connections",
+    stats: "500+ connections",
     url: "https://www.linkedin.com/in/basheer-ahamed-7a791124b",
     color: "from-blue-500 to-blue-700"
   },

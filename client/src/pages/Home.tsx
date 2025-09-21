@@ -28,12 +28,10 @@ import { FaArrowUp } from "react-icons/fa"; // add this to your imports
 import resume from "../../dist/assets/BASHEER AHAMED A  resume.pdf";
 import ecom from "../../dist/assets/ecommmerce.png";
 import Q961 from "../../dist/assets/q96-1.png";
-import Q962 from "../../dist/assets/q96-2.png";
 import  placemate from "../../dist/assets/under.jpeg";
 import  folio from "../../dist/assets/port.png";
 import cryp from "../../dist/assets/cryp.png";
 import tube from "../../dist/assets/notetube.png";
-import { Github } from "lucide-react";
 
 const skills = [
   { name: "Reactjs", level: 95, color: "from-blue-500 to-cyan-500" },
@@ -164,7 +162,7 @@ const profiles = [
     name: "LeetCode",
     icon: <SiLeetcode size={48} className="text-yellow-400" />,
     description: "Real world problem solving of my journey",
-    stats: "Journey has started",
+    stats: "50+ Problems Solved",
     url: "https://leetcode.com/u/hitmanbasheer/",
     color: "from-orange-400 to-pink-500"
   },
@@ -172,7 +170,7 @@ const profiles = [
     name: "LinkedIn",
     icon: <FaLinkedin size={48} className="text-white" />,
     description: "Network makes a worthy Venture ",
-    stats: "200+ connections",
+    stats: "500+ connections",
     url: "https://www.linkedin.com/in/basheer-ahamed-7a791124b",
     color: "from-blue-500 to-blue-700"
   },
@@ -190,7 +188,7 @@ const achievementsStats = [
   { number: "6+", label: "Tech Stacks Mastered (React, Node, Solidity...)" },
   { number: "3", label: "Internships & Projects Completed" },
   { number: "2", label: "Hackathons Participated" },
-  { number: "📚", label: "Self-Taught & Certified Developer" }
+  { number: "50+", label: "Leetcode Problems Solved" }
 ];
 
 const Home = () => {
@@ -301,7 +299,7 @@ const handleScrollTop = () => {
               whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}
               onClick={() => scrollToSection("contact")}
               className="px-8 py-3 border border-white rounded-full font-semibold text-white hover:bg-white/10">
-              Contact Me
+              Hire Me
             </motion.button>
             <motion.a
               whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}

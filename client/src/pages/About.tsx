@@ -81,7 +81,7 @@ const About = () => {
               { number: "6+", text: "Tech Stacks Mastered" },
               { number: "3+", text: "Internships & Projects" },
               { number: "2", text: "Hackathons Participated" },
-              { number: "📚", text: "Self-Taught & Certified" }
+              { number: "50+", text: "Leetcode Problems Solved" }
             ].map((stat, index) => (
               <motion.div
                 key={index}
