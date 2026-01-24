@@ -39,7 +39,6 @@ const skills = [
   { name: "Node.js", level: 90, color: "from-green-500 to-pink-400" },
   { name: "Python", level: 80, color: "from-yellow-500 to-blue-500" },
   { name: "MongoDB", level: 80, color: "from-green-500 to-green-500" },
-  { name: "Solidity", level: 50, color: "from-blue-400 to-blue-600" },
   { name: "Git & Github", level: 90, color: "from-red-600 to-green-600" },
 ];
 
@@ -199,6 +198,7 @@ const [showScroll, setShowScroll] = useState(false);
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [selectedProject, setSelectedProject] = useState<number | null>(null);
+  const [loading, setLoading] = useState(false);
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -218,27 +218,33 @@ const handleScrollTop = () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
 };
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    emailjs
-      .send(
-        "service_q4c5m2f",
-        "template_hdom0vl",
-        {
-          from_name: formData.name,
-          from_email: formData.email,
-          message: formData.message,
-          to_email: "hitmanbasheer@gmail.com",
-        },
-        "g5rQZQpYViff8bTOw"
-      )
-      .then(() => setIsSubmitted(true))
-      .catch((error) => {
-        alert("Failed to send message. Please try again.");
-        console.error(error);
-      });
-  };
- 
+const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  e.preventDefault();
+  setLoading(true);
+
+  try {
+    await emailjs.send(
+      "service_h9m84x9",
+      "template_nhhkkkc",
+      {
+        from_name: formData.name,
+        from_email: formData.email,
+        message: formData.message,
+        to_email: "ahamdeveloper01@gmail.com",
+      },
+      "trzOCWBoDKSsrfylr"
+    );
+
+    setIsSubmitted(true);
+    setFormData({ name: "", email: "", message: "" });
+  } catch (error) {
+    console.error("EmailJS Error:", error);
+    alert("Failed to send message. Please try again.");
+  } finally {
+    setLoading(false);
+  }
+};
+
 
   return (
     <PageLayout>
@@ -278,7 +284,7 @@ const handleScrollTop = () => {
             className="text-xl md:text-2xl mb-8 text-gray-300"
           >
             <Typewriter options={{
-              strings: ["I'm a Fullstack Developer","I'm Introductory Dapp developer","Innovative problem solver"],
+              strings: ["I'm a Fullstack Developer","I'm an Aspiring Software Engineer","Innovative problem solver"],
               autoStart: true,
               loop: true,
               delay: 50,
